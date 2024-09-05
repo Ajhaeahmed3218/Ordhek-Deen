@@ -1,0 +1,11 @@
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fonts{
+  font-family: 'SolaimanLipi', Arial, sans-serif !important;
+}
+.bg-custom-gradient {
+  background: linear-gradient(90deg, #522B79 0%, #ED3284 100%);
+}
