@@ -1,34 +1,47 @@
-import { FaHome } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 
 const Footer = () => {
     return (
         <div>
-        <footer className="footer  text-base-content p-8">
-            <aside className="max-w-[600px]">
-                <Link to={'/'} className="flex justify-center items-center gap-1 text-xl "><FaHome className="lg:text-3xl text-[#fc6934]" /><div className="lg:font-bold font-semibold lg:text-2xl">Gramer<span className="text-[#fc6934]">Bazar</span></div></Link>
-                <p className="text-[16px]">
-                    গ্রামের বাজার , যেখানে স্বাস্থ্য এবং স্থায়িত্বের প্রতিশ্রুতি আমরা যা কিছু করি তার কেন্দ্রবিন্দুতে। আমরা মানসম্পন্ন নিরাপদ পণ্যগুলির একটি বৈচিত্র্যময় পরিসীমা সরবরাহ করতে পেরে গর্বিত যা কেবল আপনার শরীরকেই পুষ্ট করে না বরং পৃথিবিকে একটি স্বাস্থ্যকর গ্রহে পরিণত করতে অবদান রাখে। gramer-bazar-f75f9.web.app এ, আমরা সুস্থতার পরিসিমা বৃদ্ধির জন্য বিশুদ্ধ, প্রাকৃতিক উপাদানগুলির শক্তিতে বিশ্বাস করি।
-                </p>
-            </aside>
-            <nav>
-                <h6 className="font-bold text-[#fc6934]">COMPANY</h6>
-                <a className="link link-hover">About Us</a>
-                <a className="link link-hover">রিটার্ন পলিসি</a>
-                <a className="link link-hover">রিফান্ড পলিসি</a>
-            </nav>
-            <nav>
-                <h6 className="font-bold text-[#fc6934]">QUICK HELP</h6>
-                <a className="link link-hover">গ্রাহক সেবা</a>
-                <a className="link link-hover">Contact</a>
-                
-            </nav>
-            <nav>
-                <h6 className="footer-title">DBID ID : 43736133445</h6>
-                
-            </nav>
-        </footer>
-    </div>
+            <footer className="footer footer-center bg-[#522b79] text-[#fff]  rounded p-10">
+                <nav className="grid grid-flow-col gap-4">
+                    <a className="link link-hover">Privacy Policy</a>
+                    <a className="link link-hover">Terms & Conditions</a>
+                    <a className="link link-hover">Refund Policy</a>
+                    {/* <a className="link link-hover">Press kit</a> */}
+                </nav>
+                <nav>
+                    <div className="grid grid-flow-col gap-4">
+                        
+                        <a>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                className="fill-current">
+                                <path
+                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                            </svg>
+                        </a>
+                        <a>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                className="fill-current">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </nav>
+                <aside>
+                    <p>Copyright © {new Date().getFullYear()} ordhekdeen.com</p>
+                </aside>
+            </footer>
+        </div>
     );
 };
 
