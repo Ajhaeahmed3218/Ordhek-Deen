@@ -6,23 +6,23 @@ const Header = () => {
         <div >
             <div style={{ backgroundImage: `url(${bannerImg})` }} className={`bg-[url(${bannerImg})] bg-cover bg-center lg:h-[100vh] h-[100vh] ] w-full ]  flex-col`}>
                 <div className="flex justify-center">
-                    <div className="text-center mt-[210px]">
-                        <h1 className="text-[#522b79] text-[72px] font-semibold leading-[130%]">বাংলাদেশী ইসলামিক </h1>
-                        <h1 className="text-[#e92f83] text-[72px] font-semibold leading-[130%] mt-2 mb-6">ম্যাট্রিমনি</h1>
-                        <p className="text-[#605568] font-semibold leading-[130%] text-2xl">নিজ উপজেলায় দ্বীনদার পাত্রপাত্রী খোঁজা এখন সহজ</p>
+                    <div className="text-center lg:mt-[210px] mt-[100px]">
+                        <h1 className="text-[#522b79] lg:text-[72px] text-[30px] font-semibold leading-[130%]">বাংলাদেশী ইসলামিক </h1>
+                        <h1 className="text-[#e92f83] lg:text-[72px] text-[30px] font-semibold leading-[130%] lg:mt-2  lg:mb-6 mb-3">ম্যাট্রিমনি</h1>
+                        <p className="text-[#605568] font-semibold leading-[130%] lg:text-2xl text-[.75rem]">নিজ উপজেলায় দ্বীনদার পাত্রপাত্রী খোঁজা এখন সহজ</p>
                     </div>
                 </div>
-                <div className=" text-center flex flex-col justify-center items-center mt-9">
+                <div className=" text-center flex flex-col justify-center items-center lg:mt-9 mt-4 px-3">
                     <img src={bgTop} alt="" className="w-[200px]" />
-                    <p className="border-[1px] border-[#522b79] text-xl rounded-2xl w-[830px] text-[#605568] px-[24px] py-[35px]  bg-[rgba(255,255,255,0.4)] "> যে ব্যক্তি বিয়ে করলো সে তার অর্ধেক দ্বীন পূর্ণ করে ফেললো। বাকি অর্ধেকের জন্য সে আল্লাহকে ভয় করুক। - <span className="text-[#522b79]"> (বায়হাকী, শু’আবুল ঈমান –৫৪৮৬)</span></p>
+                    <p className="border-[1px] border-[#522b79] lg:text-xl text-[.75rem] rounded-2xl lg:w-[830px] text-[#605568] lg:px-[24px] px-[16px] lg:py-[35px] py-[20px]  bg-[rgba(255,255,255,0.4)] "> যে ব্যক্তি বিয়ে করলো সে তার অর্ধেক দ্বীন পূর্ণ করে ফেললো। বাকি অর্ধেকের জন্য সে আল্লাহকে ভয় করুক। - <span className="text-[#522b79]"><br /> (বায়হাকী, শু’আবুল ঈমান –৫৪৮৬)</span></p>
                 </div>
 
 
-                <div className="flex items-center justify-center  mt-28">
-                    <form className="flex flex-wrap gap-4 bg-[#fff] dark:bg-gray-800 p-[50px] rounded-2xl shadow-lg w-full max-w-6xl">
+                <div className="flex items-center justify-center  lg:mt-28 mt-8 lg:p-0 p-3">
+                    <form className="flex lg:flex-row flex-col flex-wrap gap-4 bg-[#fff] dark:bg-gray-800 p-[50px] rounded-2xl shadow-lg w-full max-w-6xl">
                         {/* First Select: আমি খুঁজছি */}
                         <div className="flex-1">
-                            <label htmlFor="search" className="block mb-2 text-[1.25rem] font-medium text-[#522b79] dark:text-white ">
+                            <label htmlFor="search" className="block mb-2 lg:text-[1.25rem] text-[16px] font-medium text-[#522b79] dark:text-white ">
                                 আমি খুঁজছি
                             </label>
                             <select
@@ -38,7 +38,7 @@ const Header = () => {
 
                         {/* Second Select: বৈবাহিক অবস্থা */}
                         <div className="flex-1">
-                            <label htmlFor="marital-status" className="block mb-2 text-[1.25rem] font-medium text-[#522b79] dark:text-white ">
+                            <label htmlFor="marital-status" className="block mb-2 lg:text-[1.25rem] text-[16px] font-medium text-[#522b79] dark:text-white ">
                                 বৈবাহিক অবস্থা
                             </label>
                             <select
@@ -56,7 +56,7 @@ const Header = () => {
 
                         {/* Third Input: স্থায়ী ঠিকানা */}
                         <div className="flex-1">
-                            <label htmlFor="permanent-address" className="block mb-2 text-[1.25rem] font-medium text-[#522b79] dark:text-white ">
+                            <label htmlFor="permanent-address" className="block mb-2 lg:text-[1.25rem] text-[16px] font-medium text-[#522b79] dark:text-white ">
                                 স্থায়ী ঠিকানা
                             </label>
                             <input

@@ -48,7 +48,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn text-[#bc32ed] text-[16px] px-[20px] py-[8px] border-[#bc32ed] border-2 ">লগইন</a>
+                    <Link to={"/login"} className="btn font-light text-[#bc32ed] lg:text-[16px] lg:px-[20px] lg:py-[8px] border-[#bc32ed] lg:border-[1px] ">লগইন</Link>
                 </div>
             </div>
         </div>
