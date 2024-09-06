@@ -9,3 +9,8 @@
 .bg-custom-gradient {
   background: linear-gradient(90deg, #522B79 0%, #ED3284 100%);
 }
+
+.bg-box {
+  background: linear-gradient(155.6deg, #FEF5F9 7.47%, #FFFFFF 85.51%) ;
+  box-shadow: 0px 7px 14px rgba(53, 0, 105, 0.06);
+}
