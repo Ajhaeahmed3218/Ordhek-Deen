@@ -14,6 +14,7 @@ import Register from './Pages/Register.jsx';
 import Login from './Pages/Login.jsx';
 import { HelmetProvider } from 'react-helmet-async';
 import AuthProvider from './Providers/AuthProvider.jsx';
+import AboutUs from './Pages/AboutUs.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login />
+      },
+      {
+        path: '/aboutUs',
+        element: <AboutUs />
       },
     ]
 

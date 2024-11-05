@@ -6,7 +6,7 @@ const Navbar = () => {
     const navLink = <>
         <li><Link to={"/"} className="lg:text-[20px]  leading-[1.45]">হোম</Link></li>
 
-        <li><Link to={"/"} className="lg:text-[20px]  leading-[1.45]">আমাদের সম্পর্কে</Link></li>
+        <li><Link to={"/aboutUs"} className="lg:text-[20px]  leading-[1.45]">আমাদের সম্পর্কে</Link></li>
 
         <li><Link to={"/"} className="lg:text-[20px]  leading-[1.45]">জিজ্ঞাসা</Link></li>
 

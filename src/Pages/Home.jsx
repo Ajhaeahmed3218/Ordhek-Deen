@@ -112,7 +112,7 @@ const Home = () => {
                 <h2 className="text-[#522b79] text-center lg:text-[3rem] text-[30px] font-bold lg:p-0 p-3"><span className="text-[#e92f83]">অর্ধেকদ্বীনে</span> যেভাবে কাজ করে</h2>
 
                 <div className="flex lg:flex-row flex-col justify-center items-center lg:mt-20 gap-6 p-6">
-                    <div className="flex flex-col bg-box w-[300px] justify-center items-center px-[20px] py-[55px]  rounded-3xl gap-4 hover:shadow-lg text-center"
+                    <div className="flex flex-col bg-box w-[300px] justify-center items-center px-[20px] py-[70px]  rounded-3xl gap-4 hover:shadow-lg text-center"
                         style={{ transition: 'box-shadow .35s ease 0s' }}>
                         <img className="w-[55px]" src="create-biodata.svg" alt="couple" />
                         <h4 className="text-[#000] text-[1.5rem] font-bold">বায়োডাটা তৈরি করুন</h4>
@@ -121,7 +121,7 @@ const Home = () => {
                         </p>
                     </div>
 
-                    <div className="flex flex-col bg-box w-[300px] justify-center items-center px-[20px] py-[55px]  rounded-3xl gap-4 hover:shadow-lg text-center"
+                    <div className="flex flex-col bg-box w-[300px] justify-center items-center px-[20px] py-[60px]  rounded-3xl gap-4 hover:shadow-lg text-center"
                         style={{ transition: 'box-shadow .35s ease 0s' }}>
                         <img className="w-[55px]" src="search.svg" alt="couple" />
                         <h4 className="text-[#000] text-[1.5rem] font-bold">বায়োডাটা খুঁজুন</h4>
@@ -131,7 +131,7 @@ const Home = () => {
                     </div>
 
 
-                    <div className="flex flex-col bg-box w-[300px] justify-center items-center px-[20px] py-[55px]   rounded-3xl gap-4 hover:shadow-lg text-center"
+                    <div className="flex flex-col bg-box w-[300px] justify-center items-center px-[20px] py-[50px]   rounded-3xl gap-4 hover:shadow-lg text-center"
                         style={{ transition: 'box-shadow .35s ease 0s' }}>
                         <img className="w-[55px]" src="contact.svg" alt="couple" />
                         <h4 className="text-[#000] text-[1.5rem] font-bold">যোগাযোগ করুন</h4>
@@ -140,7 +140,7 @@ const Home = () => {
                         </p>
                     </div>
 
-                    <div className="flex flex-col bg-box w-[300px] justify-center items-center px-[20px] py-[55px]   rounded-3xl gap-4 hover:shadow-lg text-center"
+                    <div className="flex flex-col bg-box w-[300px] justify-center items-center px-[20px] py-[60px]   rounded-3xl gap-4 hover:shadow-lg text-center"
                         style={{ transition: 'box-shadow .35s ease 0s' }}>
                         <img className="w-[55px]" src="success.svg" alt="couple" />
                         <h4 className="text-[#000] text-[1.5rem] font-bold">বিবাহ সম্পন্ন করুন</h4>
