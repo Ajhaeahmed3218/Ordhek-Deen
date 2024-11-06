@@ -1,7 +1,44 @@
 import bannerImg from "../../public/ordekDeen.png"
 import bgTop from "../../public/bg-top.svg"
 import { IoMdSearch } from "react-icons/io";
+import { useState } from "react";
 const Header = () => {
+    const [selectedLocation, setSelectedLocation] = useState("");
+
+    // Divisions and their respective districts
+    const locations = {
+        বাংলাদেশ: {
+            divisions: {
+                ঢাকা: [
+                    "ঢাকা",
+                    "গাজীপুর",
+                    "কিশোরগঞ্জ",
+                    "মানিকগঞ্জ",
+                    "মুন্সীগঞ্জ",
+                    "নারায়ণগঞ্জ",
+                    "নরসিংদী",
+                    "ফরিদপুর",
+                    "গোপালগঞ্জ",
+                    "মাদারীপুর",
+                    "রাজবাড়ী",
+                    "শরীয়তপুর",
+                    "টাঙ্গাইল",
+                ],
+                চট্টগ্রাম: ["কুমিল্লা", "ফেনী", "ব্রাহ্মণবাড়িয়া", "রাঙ্গামাটি", "নোয়াখালী", "চাঁদপুর"],
+                রাজশাহী: ["বগুড়া", "পাবনা", "নাটোর", "নওগাঁ", "চাঁপাইনবাবগঞ্জ", "জয়পুরহাট"],
+                খুলনা: ["যশোর", "সাতক্ষীরা", "বাগেরহাট", "কুষ্টিয়া", "মাগুরা", "মেহেরপুর"],
+                বরিশাল: ["বরগুনা", "ঝালকাঠি", "পটুয়াখালী", "পিরোজপুর", "ভোলা", "বরিশাল"],
+                সিলেট: ["সুনামগঞ্জ", "মৌলভীবাজার", "হবিগঞ্জ", "সিলেট"],
+                রংপুর: ["দিনাজপুর", "পঞ্চগড়", "ঠাকুরগাঁও", "লালমনিরহাট", "নীলফামারী"],
+                ময়মনসিংহ: ["শেরপুর", "জামালপুর", "ময়মনসিংহ", "নেত্রকোনা"],
+            },
+        },
+    };
+
+    // Handle location selection
+    const handleLocationChange = (event) => {
+        setSelectedLocation(event.target.value);
+    };
     return (
         <div >
             <div style={{ backgroundImage: `url(${bannerImg})` }} className={`bg-[url(${bannerImg})] bg-cover bg-center lg:h-[100vh] h-[100vh] ] w-full ]  flex-col`}>
@@ -54,17 +91,35 @@ const Header = () => {
                             </select>
                         </div>
 
-                        {/* Third Input: স্থায়ী ঠিকানা */}
+                        {/*  স্থায়ী ঠিকানা */}
                         <div className="flex-1">
-                            <label htmlFor="permanent-address" className="block mb-2 lg:text-[1.25rem] text-[16px] font-medium text-[#522b79] dark:text-white ">
+                            <label
+                                htmlFor="location"
+                                className="block mb-2 lg:text-[1.25rem] text-[16px] font-medium text-[#522b79] dark:text-white"
+                            >
                                 স্থায়ী ঠিকানা
                             </label>
-                            <input
-                                type="text"
-                                id="permanent-address"
-                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="স্থায়ী ঠিকানা..."
-                            />
+                            <select
+                                id="location"
+                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                                value={selectedLocation}
+                                onChange={handleLocationChange}
+                            >
+                                <option value="">বেছে নিন</option>
+                                {Object.keys(locations).map((country) => (
+                                    <optgroup key={country} label={country}>
+                                        {Object.keys(locations[country].divisions).map((division) => (
+                                            <optgroup key={division} label={`  ${division}`}>
+                                                {locations[country].divisions[division].map((district) => (
+                                                    <option key={district} value={district}>
+                                                        {district}
+                                                    </option>
+                                                ))}
+                                            </optgroup>
+                                        ))}
+                                    </optgroup>
+                                ))}
+                            </select>
                         </div>
 
                         {/* Search Button */}
@@ -73,7 +128,7 @@ const Header = () => {
                                 type="submit"
                                 className="bg-custom-gradient text-white font-medium rounded-lg text-sm px-12 py-2.5 focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-500 dark:focus:border-blue-500 flex justify-center items-center gap-2"
                             >
-                               <IoMdSearch/> খুঁজুন
+                                <IoMdSearch /> খুঁজুন
                             </button>
                         </div>
                     </form>
